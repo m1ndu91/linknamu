@@ -1,27 +1,30 @@
 @import "tailwindcss";
+@import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-start: #fff8ee;
+  --background-end: #ffdfc2;
+  --foreground: #4a3a2e;
+  --card-background: rgba(255, 255, 255, 0.45);
+  --card-border: rgba(255, 255, 255, 0.65);
 }
 
 @theme inline {
-  --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-card: var(--card-background);
+  --color-card-border: var(--card-border);
+  --font-sans: "Pretendard Variable", "Pretendard", -apple-system,
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 
 body {
-  background: var(--background);
+  min-height: 100dvh;
   color: var(--foreground);
-  font-family: var(--font-sans), "Pretendard", "Apple SD Gothic Neo",
-    "Malgun Gothic", sans-serif;
+  font-family: var(--font-sans);
+  background: linear-gradient(
+    160deg,
+    var(--background-start) 0%,
+    var(--background-end) 100%
+  );
+  background-attachment: fixed;
 }
