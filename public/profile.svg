@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="프로필 사진">
+  <rect width="200" height="200" fill="#dcfce7"/>
+  <circle cx="100" cy="78" r="36" fill="#16a34a"/>
+  <path d="M28 200c0-40 32-66 72-66s72 26 72 66z" fill="#16a34a"/>
+</svg>
